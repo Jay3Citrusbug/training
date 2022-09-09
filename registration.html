@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regidivation form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+      <form class="container p-3 mb-2 bg-info text-dark" id="form" style="max-width: 40%">
+        <h1 class="head mb-5">Registration Form</h1>
+        <table style="width:auto" class="center">
+            <tr>
+              <td><label for="first_name"><b>First Name :</b></label></td>
+              <td>
+                <input type="text" placeholder="Enter first name" name="first_name" id="first_name">
+                <div id="first_name_error" style="color: red;"></div>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="last_name"><b>Last Name :</b></label></td>
+              <td>
+                  <input type="text" placeholder="Enter last name" name="last_name" id="last_name">
+                  <div id="last_name_error" style="color: red;"></div>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="email"><b>email :</b></label></td>
+              <td>
+                    <input type="text" placeholder="Enter email" name="last_name" id="email">
+                    <div id="email_error" style="color: red;"></div>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="password"><b>password :</b></label></td>
+              <td><input type="password" placeholder="Enter password" name="password" id="password" />
+                   <div id="password_error" style="color: red;"></div>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="confirm password"><b>confirm password :</b></label></td>
+              <td><input type="password" placeholder="enter same password" name="confirm password" id="confirmpassword">
+                  <div id="confirmpass_error" style="color: red;"></div>
+              </td>
+            </tr>
+
+            <tr>
+              <td><label for="gender"><b>Gender :</b></label></td>
+              <td>
+                <input type="radio" name="gender" value="Male"> Male
+                <input type="radio" name="gender" value="Female"> Female
+                <div id="gender_error" style="color: red;"></div>
+              </td>
+            </tr>
+
+             <tr>
+              <td><label for="hobby"><b>Hobby :</b></label></td>
+              <td>
+                    <input type="checkbox" name="check">coding 
+                    <input type="checkbox" name="check">writing
+                    <input type="checkbox" name="check">reading
+                    <div id="checkbox_error" style="color: red;"></div>
+              </td>
+            </tr>
+
+            <tr>
+              <td><label for="phone"><b>phone no :</b></label></td>
+              <td>
+                <select id="code">
+                  <option>91</option>
+                  <option>93</option>
+                  <option>49</option>
+                  <option>39</option>
+                </select>
+                <input type="phone" name="phone" id="phone" />
+                <div id="phoneno_error" style="color: red;"></div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+              </td>
+              <td>
+                <div class="col-md-5 text-center" style="margin-top: 10%;">
+                   <button type="button" class="btn btn-primary" id="submit">Submit</button>
+                </div>
+              </td>
+            </tr>
+  
+           
+          </table>
+      </form>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+
+.center {
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 20px;
+      }
+
+
+.head{
+    text-align: center;
+    color: blue;
+}
+
+.container{
+    
+    text-align: center;
+    /* border-radius: 10px; */
+    /* border: 1px solid black; */
+    border-color:yellow;
+    padding: 5%;
+    margin:10%
+   
+    
+}
+/* #button{
+    padding: 20%;
+ 
+}
+* {box-sizing:border-box;}   */
